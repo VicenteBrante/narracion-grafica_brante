@@ -1,4 +1,3 @@
-### **ESTE ES MI REPO!**   
 # Documentación Técnica de las Bases de Datos Limpias
 
 ---
