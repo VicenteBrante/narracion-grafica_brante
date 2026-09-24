@@ -1,8 +1,6 @@
 ### **ESTE ES MI REPO!**   
 # Documentación Técnica de las Bases de Datos Limpias
 
----
-
 ## 1. Ficha Técnica: Base de Datos de Natalidad
 
 ### Fuente de los datos
@@ -36,11 +34,11 @@
 
 ### Diccionario de Datos: Natalidad
 
-| Nombre de la Variable | Descripción | Tipo de Dato | Valores Posibles | Observaciones Editoriales |
+| Nombre de la Variable | Descripción | Valores Posibles | Observaciones Editoriales |
 | :--- | :--- | :---: | :---: | :--- |
-| `Country Name` | Nombre formal del país en español o inglés | Texto (`String`) | Nombres de los 12 países seleccionados | Estandarizado según la nomenclatura de la fuente de origen. |
-| `Country Code` | Código de identificación ISO 3166-1 alfa-3 del país | Texto (`String`) | `AUS`, `FRA`, `IRN`, `ISR`, `JOR`, `LBN`, `MEX`, `NOR`, `PSE`, `SAU`, `SYR`, `USA` | Llave primaria estandarizada para cruces y uniones (*joins*). |
-| `1998` – `2024` | Tasa bruta de natalidad para el año correspondiente | Numérico Continuo (`Float`) | Valores mayores a $0.0$ (rango típico: $8.0$ a $35.0$) | Expresado en nacimientos por cada 1.000 habitantes. Guardado con coma/punto decimal según estándar CSV. |
+| `Country Name` | Nombre formal del país en español o inglés | Nombres de los 12 países seleccionados | Estandarizado según la nomenclatura de la fuente de origen. |
+| `Country Code` | Código de identificación ISO 3166-1 alfa-3 del país | `AUS`, `FRA`, `IRN`, `ISR`, `JOR`, `LBN`, `MEX`, `NOR`, `PSE`, `SAU`, `SYR`, `USA` | Llave primaria estandarizada para cruces y uniones (*joins*). |
+| `1998` – `2024` | Tasa bruta de natalidad para el año correspondiente | Valores mayores a $0.0$ (rango típico: $8.0$ a $35.0$) | Expresado en nacimientos por cada 1.000 habitantes. Guardado con coma/punto decimal según estándar CSV. |
 
 ---
 
@@ -74,8 +72,8 @@
 
 ### Diccionario de Datos: Mortalidad Neonatal
 
-| Nombre de la Variable | Descripción | Tipo de Dato | Valores Posibles | Observaciones Editoriales |
+| Nombre de la Variable | Descripción | Valores Posibles | Observaciones Editoriales |
 | :--- | :--- | :---: | :---: | :--- |
-| `Country Name` | Nombre del país analizado | Texto (`String`) | Nombres de los 12 países elegidos | Identificador del país. |
-| `Country Code` | Código ISO 3166-1 alfa-3 | Texto (`String`) | Lista de 12 códigos ISO de 3 letras | Clave única de emparejamiento inter-dataset. |
-| `1998` – `2024` | Número absoluto estimado de muertes neonatales en dicho año | Numérico Entero (`Integer` / `Float`) | Enteros positivos ($\ge 0$) | Muertes registradas en los primeros 28 días de vida. |
+| `Country Name` | Nombre del país analizado| Nombres de los 12 países elegidos | Identificador del país. |
+| `Country Code` | Código ISO 3166-1 alfa-3 | Lista de 12 códigos ISO de 3 letras | Clave única de emparejamiento inter-dataset. |
+| `1998` – `2024` | Número absoluto estimado de muertes neonatales en dicho año | Enteros positivos ($\ge 0$) | Muertes registradas en los primeros 28 días de vida. |
